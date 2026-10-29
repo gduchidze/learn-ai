@@ -10,6 +10,7 @@ Built for interviews and written for real systems.
 ![Notes](https://img.shields.io/badge/notes-200%2B-6E56CF?style=flat-square)
 ![Sections](https://img.shields.io/badge/sections-19-0EA5E9?style=flat-square)
 ![Case Studies](https://img.shields.io/badge/case_studies-14-F59E0B?style=flat-square)
+![License: MIT](https://img.shields.io/badge/license-MIT-22C55E?style=flat-square)
 ![Obsidian](https://img.shields.io/badge/Obsidian-vault-7C3AED?style=flat-square&logo=obsidian&logoColor=white)
 
 [**Start here →**](00-start-here/AI%20System%20Design%20-%20Home.md) · [Learning Path](00-start-here/Learning%20Path.md) · [Cheat Sheets](#-cheat-sheets) · [Case Studies](12-case-studies)
@@ -125,5 +126,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for note style and conventions.
 <div align="center">
 
 ⭐ **If this saved you an interview or an outage, star the repo.** ⭐
+
+</div>
+
+---
+
+<div align="center">
+
+📄 [MIT License](LICENSE) © 2026 Giorgi Duchidze
 
 </div>
