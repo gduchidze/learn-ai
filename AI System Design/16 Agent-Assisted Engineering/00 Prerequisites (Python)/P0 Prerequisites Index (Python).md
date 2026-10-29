@@ -71,6 +71,7 @@ linkcheck/
 │   ├── __main__.py         # python -m linkcheck
 │   ├── cli.py              # composition root (P7)
 │   ├── domain.py           # pure: extract links, build report (P7)
+│   ├── service.py          # use case: check_document(text, fetcher) (P7)
 │   ├── ports.py            # Fetcher / Clock protocols (P7)
 │   ├── adapters.py         # httpx fetcher (P1 async, P7)
 │   └── errors.py           # exception hierarchy (P1)

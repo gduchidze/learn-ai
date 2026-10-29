@@ -64,7 +64,6 @@ permissions:
 env:
   PYTHONUNBUFFERED: "1"
   TZ: UTC
-  UV_LOCKED: "1"                   # fail if uv.lock is out of date with pyproject.toml
 
 jobs:
   static:
@@ -75,7 +74,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6       # check for the current major versions
         with:
           enable-cache: true
-      - run: uv sync
+      - run: uv sync --locked          # fail if uv.lock is out of date with pyproject.toml
       - run: uv run ruff format --check
       - run: uv run ruff check --output-format=github   # inline annotations on the PR
       - run: uv run mypy src
@@ -94,7 +93,7 @@ jobs:
         with:
           enable-cache: true
           python-version: ${{ matrix.python-version }}
-      - run: uv sync
+      - run: uv sync --locked
       - run: uv run pytest -n auto --durations=15 --cov=linkcheck --cov-branch --cov-report=xml --cov-fail-under=80
       - uses: actions/upload-artifact@v4
         if: failure()
@@ -112,7 +111,7 @@ What each piece buys you:
 | `on: pull_request` + `push: main` | Gate PRs; verify `main` after merge |
 | `concurrency` + `cancel-in-progress` | Don't waste runners on superseded pushes |
 | `permissions: contents: read` | A compromised step can't push code or edit releases |
-| `UV_LOCKED` / `uv sync --locked` | CI fails if someone added a dep without updating the lockfile |
+| `uv sync --locked` | CI fails if someone added a dep without updating the lockfile |
 | `setup-uv` with cache | Dependency install drops from minutes to seconds |
 | Separate `static` and `test` jobs | They run **in parallel**; lint failures show in ~30 s |
 | Matrix | Catches version-specific behavior; `fail-fast: false` shows *all* failing versions |
@@ -164,7 +163,7 @@ Cheap, high-signal checks first so a typo fails in seconds. Locally, `scripts/ch
 When CI fails and local passes, the difference is the environment. Close the gap:
 
 ```bash
-git stash -u && git clean -ndx           # what untracked stuff do you have that CI doesn't? (-n = dry run)
+git status --short --ignored            # untracked/ignored files you have that CI doesn't
 rm -rf .venv && uv sync --locked         # clean env like CI
 TZ=UTC LANG=C.UTF-8 ./scripts/check.sh   # same env vars as CI
 uv run --python 3.12 pytest -q           # the oldest version in the matrix
@@ -213,6 +212,6 @@ gh run rerun --failed                    # rerun only failed jobs (not a fix for
 
 ## 9. Done with the prerequisites?
 
-Re-score yourself in [[P0 Prerequisites Index (Python)#2. Score yourself honestly (0 / 1 / 2)]]. At ≥ 12/16, your `linkcheck` repo (layered, tested, bisectable, with a one-command check and a green CI) is your practice repo for the main track.
+Re-score yourself in §2 of [[P0 Prerequisites Index (Python)]]. At ≥ 12/16, your `linkcheck` repo (layered, tested, bisectable, with a one-command check and a green CI) is your practice repo for the main track.
 
 Next: [[01 Foundations - How Agents Actually Work]]

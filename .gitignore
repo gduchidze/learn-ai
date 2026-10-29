@@ -1,1 +1,11 @@
 .omc/
+.claudian
+
+# OS / editor noise
+.DS_Store
+.trash/
+
+# Obsidian per-device state (keep config, drop churn)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache

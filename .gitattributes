@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.md linguist-documentation=false linguist-detectable=true
+*.png binary
+*.jpg binary

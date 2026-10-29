@@ -126,6 +126,9 @@ You can't delegate what you can't judge. Score yourself 0–2 on each. You need 
 
 Gaps? Fix them first. Agents **amplify** your judgment; they don't replace it.
 
+> [!example] Python study materials for each row
+> [[P0 Prerequisites Index (Python)]] · [[P1 Python in Depth - Errors, Concurrency, Packaging|1 Language]] · [[P2 Testing with pytest - Unit, Integration, Doubles, Flakiness|2 Testing]] · [[P3 Git from the CLI - Rebase, Bisect, Worktree, Staging|3 Git]] · [[P4 Shell Fluency for Python Engineers|4 Shell]] · [[P5 Reading Unfamiliar Python Code|5 Reading code]] · [[P6 Debugging Method in Python|6 Debugging]] · [[P7 Design Basics in Python - Coupling, Interfaces, DI, Layers|7 Design]] · [[P8 CI Pipelines for Python|8 CI]]
+
 ---
 
 ## 5. Curriculum map

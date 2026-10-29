@@ -246,6 +246,9 @@ async def check_all(urls: list[str], limit: int = 20) -> list[LinkResult]:
     return [t.result() for t in tasks]
 ```
 
+> [!note] Week-1 shape
+> This first version talks to `httpx` directly. In [[P7 Design Basics in Python - Coupling, Interfaces, DI, Layers]] you'll refactor it behind a `Fetcher` port so the logic is testable without a network.
+
 Design decision to be able to defend: per-URL failures are **caught and returned as data** (so one dead link doesn't cancel the other 499), while *unexpected* errors (a bug, `KeyError`) still propagate and cancel the group. That's the difference between expected failure and a defect.
 
 | Pattern | On first failure | Use when |
