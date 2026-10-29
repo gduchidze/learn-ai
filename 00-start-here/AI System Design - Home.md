@@ -17,7 +17,7 @@ aliases: [AISD Home, AI System Design MOC]
 Start with → [[Learning Path]] · then → [[Interview Framework - 8 Steps]]
 
 > [!tip] 🧠 Targeting AI Engineer / Inference Engineer at big tech?
-> Read [[Gap Analysis - What Was Missing]] first. New folders: **15 ML Foundations** (LLM internals + ML/DL intuition) and **17 Inference Engineering** (GPU, roofline, parallelism, kernels, engine internals, benchmarking, capacity).
+> Read [[Gap Analysis - What Was Missing]] first. New folders: **16 ML Foundations** (LLM internals + ML/DL intuition) and **18 Inference Engineering** (GPU, roofline, parallelism, kernels, engine internals, benchmarking, capacity).
 
 > [!info] 🌐 Web-enhanced
 > 35+ notes now end with a **🌐 Deeper Context** section (verified numbers, paper origins, mermaid diagrams, links). Reading list → [[Research Library]]. New pattern guide → [[Agentic Workflow Patterns]].
@@ -74,7 +74,11 @@ Start with → [[Learning Path]] · then → [[Interview Framework - 8 Steps]]
 - [[Latency and Cost Metrics]]
 - [[Prefill vs Decode]]
 
-### 06 Serving and Scaling
+### 03 ML From Scratch ⭐ (beginner: build your own GPT)
+36 short, visual lessons with runnable code: math → neural nets → PyTorch → training → NLP → attention → **GPT from scratch**.
+Start → [[00 ML From Scratch - Roadmap]] · first lesson [[L01 Gradient Descent]] · finale [[L32 Code GPT]] → [[L36 Grouped Query Attention]]
+
+### 07 Serving and Scaling
 - [[Scaling LLMs - Vertical Horizontal Tensor Pipeline]]
 - [[Auto Scaling and Warm Pools]]
 - [[Load Balancing for LLMs]]
@@ -85,12 +89,12 @@ Start with → [[Learning Path]] · then → [[Interview Framework - 8 Steps]]
 - [[API Gateway and AI Gateway]]
 - [[Fault Tolerance and Circuit Breakers]]
 
-### 07 Caching and Routing
+### 08 Caching and Routing
 - [[Caching in AI - Overview]]
 - [[KV Cache]] · [[Prompt Cache]] · [[Semantic Cache]] · [[Embedding Cache]]
 - [[LLM Routing]]
 
-### 03 Retrieval and RAG
+### 04 Retrieval and RAG
 - [[Embeddings and Embedding Models]]
 - [[Vector Databases and Indexes]]
 - [[RAG Fundamentals]]
@@ -99,11 +103,11 @@ Start with → [[Learning Path]] · then → [[Interview Framework - 8 Steps]]
 - [[Agentic RAG, GraphRAG, Vectorless RAG]]
 - [[Embeddings Pipeline]]
 
-### 04 Context
+### 05 Context
 - [[Context Window Limits - Context Rot, Lost in the Middle, RoPE]]
 - [[Context Engineering]]
 
-### 05 Agents
+### 06 Agents
 - [[What is an AI Agent]]
 - [[Agentic Workflow Patterns]]
 - [[Agent Loop]]
@@ -116,18 +120,18 @@ Start with → [[Learning Path]] · then → [[Interview Framework - 8 Steps]]
 - [[Multi-Agent Systems and SubAgents]]
 - [[Computer Use and Browser Agents]]
 
-### 10 Multimodal and Voice
+### 11 Multimodal and Voice
 - [[Multimodal Systems]]
 - [[Voice AI Agents]]
 - [[Edge AI and On-Device Inference]]
 
-### 09 Safety and Compliance
+### 10 Safety and Compliance
 - [[Guardrails]]
 - [[Prompt Injection]]
 - [[AI Red Teaming and LLM Watermarking]]
 - [[Data Privacy and Compliance]]
 
-### 08 Quality and Operations
+### 09 Quality and Operations
 - [[Observability]]
 - [[Evaluation - LLM and Agent]]
 - [[Prompt Management and DSPy]]
@@ -135,19 +139,19 @@ Start with → [[Learning Path]] · then → [[Interview Framework - 8 Steps]]
 - [[Multi-Tenancy]]
 - [[Model Deployment Strategies]]
 
-### 16 Model Optimization
+### 17 Model Optimization
 - [[Inference Optimization - Overview]]
 - [[Attention]] · [[Flash Attention]] · [[Grouped Query Attention]]
 - [[Quantization]] · [[Continuous Batching]] · [[Speculative Decoding]]
 - [[Test-Time Compute]] · [[Mixture of Experts]] · [[Model Distillation]]
 - [[Fine-Tuning and LoRA]]
 
-### 14 Classic ML System Design
+### 15 Classic ML System Design
 - [[ML System Architecture - Data Model Serving Layers]]
 - [[Feature Store and Offline vs Online]]
 - [[Classic ML Components]]
 
-### 11 Case Studies
+### 12 Case Studies
 - **[[Case Studies Index]]** (study order + building-block matrix)
 - [[Case - Customer Support Chatbot]]
 - [[Case - Claude Code]]
@@ -164,7 +168,7 @@ Start with → [[Learning Path]] · then → [[Interview Framework - 8 Steps]]
 - [[Case - On-Device AI Assistant]]
 - [[Case - LLM Evaluation and Monitoring Pipeline]]
 
-### 15 ML Foundations (LLM Internals + ML/DL Intuition)
+### 16 ML Foundations (LLM Internals + ML/DL Intuition)
 - [[ML Foundations Roadmap]]
 - [[ML Basics - Learning, Generalization and Metrics]] · [[Training Fundamentals - Loss, Gradients, Optimizers]] · [[Neural Network Building Blocks]]
 - [[Tokenization and Embeddings Internals]] · [[Transformer Architecture Deep Dive]] · [[Positional Encodings - RoPE, ALiBi and Long Context]]
@@ -172,21 +176,21 @@ Start with → [[Learning Path]] · then → [[Interview Framework - 8 Steps]]
 - [[Post-Training - SFT, RLHF and DPO]] · [[Decoding and Sampling]]
 - [[LLM Math Cheat Sheet]] · [[LLM Internals and ML Foundations Q&A]]
 
-### 17 Inference Engineering
+### 18 Inference Engineering
 - [[GPU Architecture for Inference Engineers]] · [[Roofline and Performance Modeling]]
 - [[Parallelism for Inference]] · [[Kernels, Fusion and CUDA Graphs]] · [[Inference Engine Internals]]
 - [[Low-Precision Inference]] · [[Long Context and KV Cache Engineering]] · [[MoE Serving and Expert Parallelism]]
 - [[Benchmarking and Profiling Methodology]] · [[Capacity Planning and Cost per Million Tokens]]
 - [[Inference Whiteboard Drills]] · [[Inference Engineer Interview Q&A]]
 
-### 13 Agent-Assisted Engineering (Zero → Hero)
+### 14 Agent-Assisted Engineering (Zero → Hero)
 - [[00 Agent-Assisted Engineering Roadmap]]
-- [[02 Foundations - How Agents Actually Work]] · [[02 Context Engineering and Repo Memory]]
+- [[01 Foundations - How Agents Actually Work]] · [[02 Context Engineering and Repo Memory]]
 - [[03 Specification, Framing and Planning]] · [[04 Verification - Tests, Feedback Loops and Gates]]
 - [[05 Debugging, Code Review and Codebase Design]] · [[06 Delegation, Parallelism and Handoff]]
 - [[07 Software Factories and Automation]] · [[08 Projects, Capstone and Mastery]]
 
-### 12 Interview Prep
+### 13 Interview Prep
 - [[Interview Framework - 8 Steps]]
 - [[7 Infra Patterns for AI Engineers]]
 - [[Trade-offs Cheat Sheet]]
