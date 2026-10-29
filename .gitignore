@@ -7,3 +7,4 @@
 
 # Obsidian config (local only)
 .obsidian/
+.vercel
