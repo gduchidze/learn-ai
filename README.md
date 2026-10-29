@@ -11,9 +11,8 @@ Built for interviews and written for real systems.
 ![Sections](https://img.shields.io/badge/sections-17-0EA5E9?style=flat-square)
 ![Case Studies](https://img.shields.io/badge/case_studies-14-F59E0B?style=flat-square)
 ![Obsidian](https://img.shields.io/badge/Obsidian-vault-7C3AED?style=flat-square&logo=obsidian&logoColor=white)
-![License](https://img.shields.io/badge/use-free_to_learn-22C55E?style=flat-square)
 
-[**Start here →**](AI%20System%20Design/00%20Start%20Here/AI%20System%20Design%20-%20Home.md) · [Learning Path](AI%20System%20Design/00%20Start%20Here/Learning%20Path.md) · [Cheat Sheets](#-cheat-sheets) · [Case Studies](AI%20System%20Design/12%20Case%20Studies)
+[**Start here →**](00-start-here/AI%20System%20Design%20-%20Home.md) · [Learning Path](00-start-here/Learning%20Path.md) · [Cheat Sheets](#-cheat-sheets) · [Case Studies](12-case-studies)
 
 </div>
 
@@ -56,24 +55,24 @@ flowchart LR
 
 | # | Section | What you'll master |
 |---|---|---|
-| 🟢 | [**Junior Track**](AI%20System%20Design/00%20Junior%20Track) | 10-day plan, the story of one request, 3 mock interviews |
-| 00 | [**Start Here**](AI%20System%20Design/00%20Start%20Here) | Home, learning path, gap analysis, research library |
-| 01 | [**Foundations**](AI%20System%20Design/01%20Foundations) | Tokens, prefill vs decode, GPU/TPU/LPU, latency & cost metrics |
-| 02 | [**Serving & Scaling**](AI%20System%20Design/02%20Serving%20and%20Scaling) | AI gateways, LLM load balancing, rate limiting, streaming, autoscaling |
-| 03 | [**Caching & Routing**](AI%20System%20Design/03%20Caching%20and%20Routing) | KV, prompt and semantic caches, LLM routing |
-| 04 | [**Retrieval & RAG**](AI%20System%20Design/04%20Retrieval%20and%20RAG) | Chunking, embeddings, vector indexes, hybrid search, GraphRAG |
-| 05 | [**Context**](AI%20System%20Design/05%20Context) | Context engineering, context rot, lost-in-the-middle |
-| 06 | [**Agents**](AI%20System%20Design/06%20Agents) | Agent loop, tools, memory, MCP & A2A, multi-agent, computer use |
-| 07 | [**Multimodal & Voice**](AI%20System%20Design/07%20Multimodal%20and%20Voice) | Voice agents, multimodal pipelines, on-device AI |
-| 08 | [**Safety & Compliance**](AI%20System%20Design/08%20Safety%20and%20Compliance) | Prompt injection, guardrails, red teaming, privacy |
-| 09 | [**Quality & Ops**](AI%20System%20Design/09%20Quality%20and%20Operations) | Evals, observability, deployment strategies, cost, multi-tenancy |
-| 10 | [**Model Optimization**](AI%20System%20Design/10%20Model%20Optimization) | FlashAttention, GQA, MoE, quantization, speculative decoding, LoRA |
-| 11 | [**Classic ML Design**](AI%20System%20Design/11%20Classic%20ML%20System%20Design) | Feature stores, online vs offline, serving layers |
-| 12 | [**Case Studies**](AI%20System%20Design/12%20Case%20Studies) | ChatGPT, Claude Code, Cursor, Perplexity, voice agents, fraud detection… |
-| 13 | [**Interview Prep**](AI%20System%20Design/13%20Interview%20Prep) | 8-step framework, question bank, flashcards, key numbers |
-| 14 | [**ML Foundations**](AI%20System%20Design/14%20ML%20Foundations) | Transformers, RoPE, scaling laws, ZeRO, SFT/RLHF/DPO, sampling |
-| 15 | [**Inference Engineering**](AI%20System%20Design/15%20Inference%20Engineering) | Roofline, kernels & CUDA graphs, TP/PP/EP, FP8/FP4, $/M tokens |
-| 16 | [**Agent-Assisted Engineering**](AI%20System%20Design/16%20Agent-Assisted%20Engineering) | Working with coding agents: context, specs, verification, delegation |
+| 🟢 | [**Junior Track**](00-junior-track) | 10-day plan, the story of one request, 3 mock interviews |
+| 00 | [**Start Here**](00-start-here) | Home, learning path, gap analysis, research library |
+| 01 | [**Foundations**](01-foundations) | Tokens, prefill vs decode, GPU/TPU/LPU, latency & cost metrics |
+| 02 | [**Serving & Scaling**](02-serving-and-scaling) | AI gateways, LLM load balancing, rate limiting, streaming, autoscaling |
+| 03 | [**Caching & Routing**](03-caching-and-routing) | KV, prompt and semantic caches, LLM routing |
+| 04 | [**Retrieval & RAG**](04-retrieval-and-rag) | Chunking, embeddings, vector indexes, hybrid search, GraphRAG |
+| 05 | [**Context**](05-context) | Context engineering, context rot, lost-in-the-middle |
+| 06 | [**Agents**](06-agents) | Agent loop, tools, memory, MCP & A2A, multi-agent, computer use |
+| 07 | [**Multimodal & Voice**](07-multimodal-and-voice) | Voice agents, multimodal pipelines, on-device AI |
+| 08 | [**Safety & Compliance**](08-safety-and-compliance) | Prompt injection, guardrails, red teaming, privacy |
+| 09 | [**Quality & Ops**](09-quality-and-operations) | Evals, observability, deployment strategies, cost, multi-tenancy |
+| 10 | [**Model Optimization**](10-model-optimization) | FlashAttention, GQA, MoE, quantization, speculative decoding, LoRA |
+| 11 | [**Classic ML Design**](11-classic-ml-system-design) | Feature stores, online vs offline, serving layers |
+| 12 | [**Case Studies**](12-case-studies) | ChatGPT, Claude Code, Cursor, Perplexity, voice agents, fraud detection… |
+| 13 | [**Interview Prep**](13-interview-prep) | 8-step framework, question bank, flashcards, key numbers |
+| 14 | [**ML Foundations**](14-ml-foundations) | Transformers, RoPE, scaling laws, ZeRO, SFT/RLHF/DPO, sampling |
+| 15 | [**Inference Engineering**](15-inference-engineering) | Roofline, kernels & CUDA graphs, TP/PP/EP, FP8/FP4, $/M tokens |
+| 16 | [**Agent-Assisted Engineering**](16-agent-assisted-engineering) | Working with coding agents: context, specs, verification, delegation |
 
 ---
 
@@ -91,12 +90,12 @@ flowchart LR
 
 ## 🧾 Cheat sheets
 
-- 📏 [Key Numbers Cheat Sheet](AI%20System%20Design/13%20Interview%20Prep/Key%20Numbers%20Cheat%20Sheet.md): latency, memory and cost numbers to memorize
-- ⚖️ [Trade-offs Cheat Sheet](AI%20System%20Design/13%20Interview%20Prep/Trade-offs%20Cheat%20Sheet.md)
-- 🧮 [LLM Math Cheat Sheet](AI%20System%20Design/14%20ML%20Foundations/LLM%20Math%20Cheat%20Sheet.md): params, FLOPs, KV-cache size
-- 🧩 [7 Infra Patterns for AI Engineers](AI%20System%20Design/13%20Interview%20Prep/7%20Infra%20Patterns%20for%20AI%20Engineers.md)
-- 🗣️ [Interview Framework: 8 Steps](AI%20System%20Design/13%20Interview%20Prep/Interview%20Framework%20-%208%20Steps.md)
-- 🃏 [Flashcards](AI%20System%20Design/13%20Interview%20Prep/Flashcards.md) · 📖 [Glossary](AI%20System%20Design/13%20Interview%20Prep/Glossary.md)
+- 📏 [Key Numbers Cheat Sheet](13-interview-prep/Key%20Numbers%20Cheat%20Sheet.md): latency, memory and cost numbers to memorize
+- ⚖️ [Trade-offs Cheat Sheet](13-interview-prep/Trade-offs%20Cheat%20Sheet.md)
+- 🧮 [LLM Math Cheat Sheet](14-ml-foundations/LLM%20Math%20Cheat%20Sheet.md): params, FLOPs, KV-cache size
+- 🧩 [7 Infra Patterns for AI Engineers](13-interview-prep/7%20Infra%20Patterns%20for%20AI%20Engineers.md)
+- 🗣️ [Interview Framework: 8 Steps](13-interview-prep/Interview%20Framework%20-%208%20Steps.md)
+- 🃏 [Flashcards](13-interview-prep/Flashcards.md) · 📖 [Glossary](13-interview-prep/Glossary.md)
 
 ---
 
@@ -114,14 +113,14 @@ git clone https://github.com/gduchidze/learn-ai.git
 ### Note conventions
 - 🟢 **Junior Explanation**: plain-words summary at the top of each note
 - 🌐 **Deeper Context**: verified numbers, paper origins, links
-- Source tags: `[OS]` Outcome School · `[SDH]` System Design Handbook · `[JAM]` Jam with AI · `[WEB]` web research. See [Sources](AI%20System%20Design/00%20Start%20Here/Sources.md)
+- Source tags: `[OS]` Outcome School · `[SDH]` System Design Handbook · `[JAM]` Jam with AI · `[WEB]` web research. See [Sources](00-start-here/Sources.md)
 
 ---
 
 ## 🤝 Contributing
 
 Found a wrong number, a stale benchmark or a missing topic? PRs and issues are welcome.
-Keep each note focused on one concept, link generously, and cite your source.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for note style and conventions.
 
 <div align="center">
 
